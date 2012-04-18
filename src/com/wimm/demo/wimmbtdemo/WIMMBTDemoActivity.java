@@ -50,7 +50,7 @@ public class WIMMBTDemoActivity extends LauncherActivity implements OnClickListe
     // For debugging purposes.
     public final static String TAG = WIMMBTDemoActivity.class.getSimpleName();
 
-    // Message types for WIMMBTDemoService handler.
+    // Message types for WIMMBTDemoManager handler.
     public static final int MESSAGE_STATE_CHANGE = 1;
     public static final int MESSAGE_READ = 2;
     public static final int MESSAGE_WRITE = 3;
@@ -274,7 +274,7 @@ public class WIMMBTDemoActivity extends LauncherActivity implements OnClickListe
         mWIMMBTDemoManager.write(send);
     }
 
-    // The handler that will handle message from WIMMBTDemoService
+    // The handler that will handle message from WIMMBTDemoManager
     private Handler mHandler = new Handler(){
 
         @Override
